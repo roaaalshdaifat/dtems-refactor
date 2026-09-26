@@ -1,0 +1,94 @@
+.dt-page-login {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--color-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.dt-login-container {
+  width: 100%;
+  max-width: 420px;
+}
+
+.dt-login-content {
+  background: var(--color-card);
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: var(--shadow-lg);
+}
+
+.dt-login-title {
+  font-family: var(--font-body);
+  font-size: var(--font-size-4xl);
+  font-weight: 700;
+  color: var(--color-heading-auth);
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.dt-login-subtitle {
+  font-family: var(--font-body);
+  font-size: var(--font-size-md);
+  color: var(--color-text-muted);
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.dt-login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.dt-error-box {
+  background: var(--color-error-bg);
+  border: 1px solid var(--color-error);
+  border-radius: 8px;
+  padding: 12px 16px;
+  color: var(--color-error);
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.dt-login-remember-forgot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.dt-forgot-link {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color var(--transition-fast);
+}
+
+.dt-forgot-link:hover {
+  color: var(--color-primary-hover);
+}
+
+.dt-login-footer {
+  text-align: center;
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--color-text-muted);
+  margin-top: 24px;
+}
+
+.dt-login-footer a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color var(--transition-fast);
+}
+
+.dt-login-footer a:hover {
+  color: var(--color-primary-hover);
+}

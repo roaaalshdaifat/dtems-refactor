@@ -1,0 +1,116 @@
+.dt-page-registration {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--color-background);
+  padding: 40px 20px;
+}
+
+.dt-reg-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.dt-reg-content {
+  background: var(--color-card);
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: var(--shadow-lg);
+}
+
+.dt-reg-title {
+  font-family: var(--font-body);
+  font-size: var(--font-size-4xl);
+  font-weight: 700;
+  color: var(--color-heading-auth);
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.dt-reg-subtitle {
+  font-family: var(--font-body);
+  font-size: var(--font-size-md);
+  color: var(--color-text-muted);
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.dt-reg-form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.dt-reg-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.dt-reg-section-title {
+  font-family: var(--font-body);
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  color: var(--color-text);
+  border-bottom: 2px solid var(--color-border-light);
+  padding-bottom: 12px;
+}
+
+.dt-reg-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 480px) {
+  .dt-reg-grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .dt-reg-content {
+    padding: 24px;
+  }
+}
+
+.dt-select {
+  width: 100%;
+  padding: 15px 18px;
+  font-family: var(--font-body);
+  font-size: 17px;
+  color: var(--color-text);
+  background: var(--color-input-bg);
+  border: 1.5px solid var(--color-input-border);
+  border-radius: 8px;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color var(--transition-fast);
+}
+
+.dt-select:focus {
+  border-color: var(--color-focus-border);
+  box-shadow: 0 0 0 3px var(--color-focus-shadow);
+}
+
+.dt-reg-terms {
+  padding: 16px;
+  background: var(--color-surface);
+  border-radius: 8px;
+}
+
+.dt-reg-footer {
+  text-align: center;
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+
+.dt-reg-footer a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color var(--transition-fast);
+}
+
+.dt-reg-footer a:hover {
+  color: var(--color-primary-hover);
+}

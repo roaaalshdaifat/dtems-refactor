@@ -39,7 +39,7 @@ export function isValidEmail(v) {
   if (
     local.startsWith(".") ||
     local.endsWith(".") ||
-    /\.\./. test(local)
+    local.includes("..")
   ) {
     return false;
   }
@@ -52,9 +52,7 @@ export function isValidEmail(v) {
 
   if (
     parts.length < 2 ||
-    /\.\./. test(domain) ||
-    domain.startsWith("-") ||
-    domain.endsWith("-")
+    domain.includes("..")
   ) {
     return false;
   }
